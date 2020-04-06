@@ -1,0 +1,13 @@
+.font-color {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  #sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 33.33%
+  }
+}
