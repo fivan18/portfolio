@@ -15,12 +15,13 @@
 }
 
 .bg-image {
+  height: 200px;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/*
 @media (min-width: 1200px) {
   .bg-image {
     border-top-left-radius: 15px;
@@ -35,3 +36,4 @@
     height: 200px;
   }
 }
+*/
