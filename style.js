@@ -1,4 +1,0 @@
-let object = {
-  name = "sisitemas"
-}
-
