@@ -3,27 +3,11 @@
   color: white;
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   #sidebar {
     position: fixed;
     top: 0;
     bottom: 0;
     width: 33.33%
   }
-}
-
-
-.json code{
-  color: white;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 3ch;
-}
-
-pre {
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
 }

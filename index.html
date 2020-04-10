@@ -22,8 +22,8 @@
     <div class="container-fluid h-100 p-0 m-0">
       <div class="row h-100 no-gutters">
         <div class="col-lg-4 mb-3 mb-lg-0">
-          <aside class="sticky-top py-5 p-0 m-0 profile-sidebar" id="sidebar">
-            <div class="text-center">
+          <aside class="sticky-top py-5 px-3 m-0 profile-sidebar" id="sidebar">
+            <div class="text-center mb-4">
               <img src="me.jpeg" class="rounded-circle mx-auto d-block profile-img" alt="Ivan image">
             </div>
             
@@ -99,7 +99,7 @@
       item.addEventListener("mouseenter", (event) => {  
         json =  event.target.querySelector('.item-right code');
         object = JSON.parse(json.textContent);
-        json.textContent = JSON.stringify(object, undefined, 4);
+        json.textContent = JSON.stringify(object, undefined, 2);
       });
       item.addEventListener("mouseleave", (event) => {  
         json =  event.target.querySelector('.item-right code');

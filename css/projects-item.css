@@ -35,3 +35,25 @@
     height: 200px;
   }
 }
+
+@media only screen and (max-width: 576px) {
+  pre.json code{
+    font-size: 1.7ch;
+  }
+}
+
+
+.json code{
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 2.5ch;
+}
+
+pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
