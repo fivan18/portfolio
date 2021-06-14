@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "ivan's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fivan18/portfolio.git"
+  },
+  "author": "Ivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fivan18/portfolio/issues"
+  },
+  "homepage": "https://github.com/fivan18/portfolio#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0"
+  }
+}
