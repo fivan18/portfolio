@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins/Poppins-Thin.ttf") format("truetype"),
+    url("fonts/Poppins/Poppins-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+}
