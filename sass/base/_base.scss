@@ -33,7 +33,11 @@ body {
     }
 }
 
-::selection {
-    background-color: #E5E5E5;
-    color: white;
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style-type: none;
 }
