@@ -4,6 +4,10 @@
     background-color: #FFFFFF;
     padding: 0 15rem;
 
+    @include respond(phone) {
+        padding: 0 3rem;
+    }
+
     position: absolute;
     left: 0;
     top: 0;
@@ -38,12 +42,20 @@
                 }
             }
         }
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &__nav-button {
-        display: block;
+        display: none;
         text-align: center;
         cursor: pointer;
+
+        @include respond(phone) {
+            display: block;
+        }
     }
 
     &__nav-icon {

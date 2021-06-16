@@ -69,6 +69,9 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      padding: 0 3rem; } }
   .header__logo {
     font-size: 1.8rem;
     font-style: normal;
@@ -85,10 +88,16 @@ body {
         font-style: normal;
         font-weight: 500;
         line-height: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .header__nav {
+      display: none; } }
   .header__nav-button {
-    display: block;
+    display: none;
     text-align: center;
     cursor: pointer; }
+    @media only screen and (max-width: 37.5em) {
+      .header__nav-button {
+        display: block; } }
   .header__nav-icon {
     position: relative;
     margin-top: 3.5rem; }
