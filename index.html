@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="portfolio">
-        <a href="" class="card">
+        <a href="#popup" class="card" id="catalogue">
           <div class="card__left">
             <img class="card__img" src="/assets/catalogue.png" alt="Image of Books Catalogue">
           </div>
@@ -80,5 +80,35 @@
         </a>
       </div>
     </main>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+          <div class="card">
+            <a href="#catalogue" class="popup__close">&times;</a>
+            <div class="card__left">
+              <img class="card__img" src="/assets/catalogue.png" alt="Image of Books Catalogue">
+            </div>
+            <div class="card__rigth">
+              <h2 class="card__head">
+                Catalogue of Books
+              </h2>
+              <div class="card__sub-header">
+                <span>&middot;</span> Front End Dev
+              </div>
+              <p class="card__p">
+                This app is a catalog of books, that is, a browsable list of books. The books can be filtered by the first published year and access to the details of each one. Build with React & Redux.
+              </p>
+              <div class="card__tags">
+                <span>JavaScript</span>
+                <span>html</span>
+                <span>React</span>
+                <span>css</span>
+                <span>Redux</span>
+                <span>Sass</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
   </body>
 </html>
