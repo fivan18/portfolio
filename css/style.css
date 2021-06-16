@@ -159,3 +159,22 @@ body {
     .head__links > a > img {
       width: 2rem;
       margin-right: 1rem; }
+
+.card {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #FFF;
+  transition: transform 0.3s; }
+  .card:hover {
+    transform: translateY(-1rem) scale(1.03); }
+  .card__left {
+    width: 50%;
+    padding: 2rem; }
+  .card__rigth {
+    padding: 4rem 2rem;
+    padding-right: 10rem; }
+  .card__img {
+    width: 100%; }
+
+.portfolio {
+  padding: 15rem 15rem; }

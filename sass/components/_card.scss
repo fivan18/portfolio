@@ -1,0 +1,26 @@
+.card {
+    display: flex;
+    flex-flow: row nowrap;
+
+    background-color: #FFF;
+
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-1rem) scale(1.03);
+    }
+
+    &__left {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    &__rigth {
+        padding: 4rem 2rem;
+        padding-right: 10rem;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}
