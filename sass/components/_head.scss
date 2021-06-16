@@ -3,6 +3,15 @@
     background-color: #FFFFFF;
     border-bottom-left-radius: 15rem;
 
+    @include respond(tab-port) {
+        padding: 10rem 15rem;
+    }
+
+    @include respond(phone) {
+        padding: 5rem 10rem;
+        border-bottom-left-radius: 10rem;
+    }
+
     & > h1 {
         font-style: normal;
         font-weight: 700;

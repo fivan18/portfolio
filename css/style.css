@@ -127,6 +127,13 @@ body {
   padding: 20rem 30rem;
   background-color: #FFFFFF;
   border-bottom-left-radius: 15rem; }
+  @media only screen and (max-width: 56.25em) {
+    .head {
+      padding: 10rem 15rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .head {
+      padding: 5rem 10rem;
+      border-bottom-left-radius: 10rem; } }
   .head > h1 {
     font-style: normal;
     font-weight: 700;
