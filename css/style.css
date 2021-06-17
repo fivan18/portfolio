@@ -357,3 +357,39 @@ body {
     line-height: 1; }
   .popup__close:hover {
     color: gray; }
+
+.about {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 8rem 10rem;
+  background-color: #FFF; }
+  .about__left {
+    width: 45%; }
+    .about__left > h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 5.2rem;
+      color: #091E42;
+      margin-bottom: 2.5rem; }
+    .about__left > p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #344563;
+      margin-bottom: 2rem; }
+    .about__left > a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: #7F8CFF; }
+  .about__links {
+    margin-top: 2rem; }
+    .about__links > a > img {
+      width: 2rem;
+      margin-right: 1rem; }
+  .about__rigth {
+    width: 55%;
+    padding-left: 4rem; }
