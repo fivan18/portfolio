@@ -202,8 +202,6 @@ body {
     color: #6B778C;
     text-justify: center;
     margin-bottom: 3rem; }
-    .card__sub-header > span {
-      font-size: 2.2rem; }
   .card__p {
     font-style: normal;
     font-weight: 400;
@@ -250,39 +248,73 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 75%;
+    width: 60%;
+    padding: 2rem;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+    border-radius: 2rem;
     display: table;
     overflow: hidden;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all .5s .2s; }
-  .popup__left {
-    width: 33.333333%;
-    display: table-cell; }
-  .popup__right {
-    width: 66.6666667%;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 3rem 5rem; }
+  .popup__head {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.2rem;
+    color: #373838; }
+  .popup__sub-header {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #6B778C;
+    text-justify: center;
+    margin-bottom: 1.5rem; }
   .popup__img {
-    display: block;
-    width: 100%; }
-  .popup__text {
+    width: 100%;
+    border-radius: 1rem; }
+  .popup__bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-top: 2rem; }
+    .popup__bottom-left {
+      width: 70%; }
+    .popup__bottom-rigth {
+      width: 30%;
+      padding-left: 1.5rem; }
+  .popup__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem; }
+  .popup__tags {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem; }
+    .popup__tags > span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: .4rem 1.2rem;
+      border-radius: .8rem;
+      color: #6070FF;
+      background-color: #EBEBFF;
+      margin-right: .5rem; }
+  .popup__links > a {
+    border: 1px solid #7F8CFF;
+    box-sizing: border-box;
+    border-radius: .8rem;
+    background: #FFFFFF;
+    padding: .6rem .8rem;
+    font-style: normal;
+    font-weight: 500;
     font-size: 1.4rem;
-    margin-bottom: 4rem;
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid gray;
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid gray;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto; }
+    line-height: 1rem;
+    color: #6070FF; }
   .popup:target {
     opacity: 1;
     visibility: visible; }
