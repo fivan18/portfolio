@@ -1,0 +1,53 @@
+.about {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 8rem 10rem;
+
+    background-color: #FFF;
+
+    &__left {
+        width: 45%;
+
+        & > h2 {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 4rem;
+            line-height: 5.2rem;
+            color: #091E42;
+
+            margin-bottom: 2.5rem;
+        }
+
+        & > p  {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #344563;
+
+            margin-bottom: 2rem;
+        }
+
+        & > a {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: #7F8CFF;
+        }
+    }
+
+    &__links {
+        margin-top: 2rem;
+
+        & > a > img {
+            width: 2rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &__rigth {
+        width: 55%;
+        padding-left: 4rem;
+    }
+}
