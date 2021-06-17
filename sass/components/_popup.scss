@@ -17,9 +17,21 @@
     }
 
     &__content {
-        @include absCenter;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         width: 60%;
+        @include respond(tab-land) {
+            width: 80%;
+        }
+        @include respond(tab-port) {
+            width: 90%;
+        }
+        @include respond(phone) {
+            width: 96%;
+        }
         padding: 2rem;
         background-color: white;
         box-shadow: 0 2rem 4rem rgba(black, .2);
@@ -61,13 +73,25 @@
         flex-flow: row nowrap;
         padding-top: 2rem;
 
+        @include respond(tab-port) {
+            flex-flow: column nowrap;
+            padding-top: 1rem;
+        }
+
         &-left {
             width: 70%;
+            @include respond(tab-port) {
+                width: 100%;
+            }
         }
 
         &-rigth {
             width: 30%;
             padding-left: 1.5rem;
+            @include respond(tab-port) {
+                width: 100%;
+                padding: 0;
+            }
         }
     }
 
@@ -102,6 +126,9 @@
     }
 
     &__links {
+        display: flex;
+        flex-flow: row wrap;
+
         & > a {
             border: 1px solid #7F8CFF;
             box-sizing: border-box;
@@ -114,6 +141,8 @@
             font-size: 1.4rem;
             line-height: 1rem;
             color: #6070FF;
+
+            margin-right: 1rem;
         }
     }
 
