@@ -132,7 +132,7 @@ body {
       padding: 10rem 15rem; } }
   @media only screen and (max-width: 37.5em) {
     .head {
-      padding: 5rem 10rem;
+      padding: 5rem 2rem;
       border-bottom-left-radius: 10rem; } }
   .head > h1 {
     font-style: normal;
@@ -159,6 +159,9 @@ body {
     .head__links > a > img {
       width: 2rem;
       margin-right: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .head__links {
+        margin-bottom: 8rem; } }
 
 .card {
   display: flex;
@@ -364,8 +367,20 @@ body {
   padding: 8rem 10rem;
   background-color: #FFF;
   border-top-right-radius: 15rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      padding: 4rem 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      padding: 4rem 2rem;
+      border-top-right-radius: 10rem;
+      flex-flow: column nowrap; } }
   .about__left {
     width: 45%; }
+    @media only screen and (max-width: 37.5em) {
+      .about__left {
+        width: 100%;
+        margin-bottom: 2rem; } }
     .about__left > h2 {
       font-style: normal;
       font-weight: 700;
@@ -406,6 +421,10 @@ body {
   .about__rigth {
     width: 55%;
     padding-left: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__rigth {
+        width: 100%;
+        padding: 0; } }
   .about__skills > h3 {
     font-style: normal;
     font-weight: 500;
