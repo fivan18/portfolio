@@ -1,0 +1,178 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(black, .8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        background-color: rgba(black, .3);
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 60%;
+        @include respond(tab-land) {
+            width: 80%;
+        }
+        @include respond(tab-port) {
+            width: 90%;
+        }
+        @include respond(phone) {
+            width: 96%;
+        }
+        padding: 2rem;
+        background-color: white;
+        box-shadow: 0 2rem 4rem rgba(black, .2);
+        border-radius: 2rem;
+        display: table;
+        overflow: hidden;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(.25);
+        transition: all .5s .2s;
+    }
+
+    &__head {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 5.2rem;
+        color: #373838;
+    }
+
+    &__sub-header {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        color: #6B778C;
+
+        text-justify: center;
+
+        margin-bottom: 1.5rem;
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+
+    &__bottom {
+        display: flex;
+        flex-flow: row nowrap;
+        padding-top: 2rem;
+
+        @include respond(tab-port) {
+            flex-flow: column nowrap;
+            padding-top: 1rem;
+        }
+
+        &-left {
+            width: 70%;
+            @include respond(tab-port) {
+                width: 100%;
+            }
+        }
+
+        &-rigth {
+            width: 30%;
+            padding-left: 1.5rem;
+            @include respond(tab-port) {
+                width: 100%;
+                padding: 0;
+            }
+        }
+    }
+
+    &__p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+
+        margin-bottom: 2rem;
+    }
+
+    &__tags {
+        display: flex;
+        flex-flow: row wrap;
+
+        & > span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+            padding: .4rem 1.2rem;
+            border-radius: .8rem;
+
+            color: #6070FF;
+            background-color: #EBEBFF;
+
+            margin-right: .5rem;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-flow: row wrap;
+
+        & > a {
+            border: 1px solid #7F8CFF;
+            box-sizing: border-box;
+            border-radius: .8rem;
+            background: #FFFFFF;
+            padding: .6rem .8rem;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1rem;
+            color: #6070FF;
+
+            margin-right: 1rem;
+        }
+    }
+
+    //Open states
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            color: gray;
+            position: absolute;
+            top: 2.5rem;
+            right: 2.5rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .2s;
+            line-height: 1;
+        }
+
+        &:hover {
+            color: gray;
+        }
+    }
+}

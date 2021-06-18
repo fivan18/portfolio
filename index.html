@@ -1,154 +1,216 @@
 <!doctype html>
 <html>
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/projects-item.css">
-    <link rel="stylesheet" href="css/footer.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/dfacbdbf36.js" crossorigin="anonymous"></script>
-
-    <title>Ivancito</title>
+    <title>Ivan</title>
   </head>
   <body>
-    <div class="container-fluid h-100 p-0 m-0">
-      <div class="row h-100 no-gutters">
-        <div class="col-lg-4 mb-3 mb-lg-0">
-          <aside class="sticky-top py-5 px-3 m-0 profile-sidebar" id="sidebar">
-            <div class="text-center mb-4">
-              <img src="me.jpeg" class="rounded-circle mx-auto d-block profile-img" alt="Ivan image">
-            </div>
-            
-            <h1 class="font-color text-center name">
-              Ivan
-            </h1>
+    <header class="header">
+      <div class="header__logo">
+        Ivancito
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="header__nav-button" href="#nav-responsive">
+        <span class="header__nav-icon">&nbsp;</span>
+      </a>
+    </header>
 
-            <p class="text-center font-color description">
-              Hey I'm a mechatronic engineer incursioning in web software development
-            </p>
-
-            <div class="d-flex justify-content-center">
-              <div class="profile-links">
-                <a target="_blank" href="https://github.com/fivan18">
-                  <i class="fab fa-github-alt"></i>
-                </a>
-                <a target="_blank" href="https://twitter.com/fivanunam">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a target="_blank" href="https://www.linkedin.com/in/fivan">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </code>
-            </div>
-          </aside>
+    <main class="main">
+      <div class="head" id="head">
+        <h1>
+          Hi I'm Ivan! <br>
+          Nice you are here!
+        </h1>
+        <p>
+          I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded don't hesitate to contact me.
+        </p>
+        <a href="#contact">LET'S CONNECT</a>
+        <div class="head__links">
+          <a href="https://twitter.com/fivanunam" target="_blank">
+            <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+          </a>
+          <a href="https://www.linkedin.com/in/fivan/" target="_blank">
+            <img src="https://img.icons8.com/android/24/000000/linkedin.png"/>
+          </a>
+          <a href="https://hackernoon.com/u/fivan" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/000000/book.png"/>
+          </a>
+          <a href="https://github.com/fivan18" target="_blank">
+            <img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
+          </a>
+          <a href="https://angel.co/u/fivan" target="_blank">
+            <img src="https://img.icons8.com/fluent-systems-regular/48/000000/hand-peace.png"/>
+          </a>
         </div>
-        <main class="col col-lg-8">
-
-          <div class="p-3 p-lg-5">
-            <div class="mb-3 my_item project">
-              <div class="row no-gutters">
-                <div class="item-left col-12 col-xl-4">
-                  <div class="bg-image" style="background-image: url('assets/ibrahim-rifath-OApHds2yEGQ-unsplash.jpg');">
-                  </div>
-                </div>
-                <div class="item-right col-12 col-xl-8 p-3">
-                  <pre class="p-0 m-0 json"><code></code></pre>
-                  <div class="profile-links">
-                    <a target="_blank" href="https://github.com/fivan18/group-transactions">
-                      <i class="fab fa-github-square"></i>
-                    </a>
-                    <a class="font-color" target="_blank" href="https://group-transactions.herokuapp.com/users/sign_in">
-                      DEMO
-                    </a>
-                  </div>
-                </div>
-              </div>
+      </div>
+      <div class="portfolio" id="portfolio">
+        <a href="#popup-catalogue" class="card" id="catalogue">
+          <div class="card__left">
+            <img class="card__img" src="/assets/catalogue.png" alt="Image of Books Catalogue">
+          </div>
+          <div class="card__rigth">
+            <h2 class="card__head">
+              Catalogue of Books
+            </h2>
+            <div class="card__sub-header">
+              Front End Dev
+            </div>
+            <p class="card__p">
+              This app is a catalog of books, that is, a browsable list of books. The books can be filtered by the first published year and access to the details of each one. Build with React & Redux.
+            </p>
+            <div class="card__tags">
+              <span>JavaScript</span>
+              <span>html</span>
+              <span>React</span>
+              <span>css</span>
+              <span>Redux</span>
+              <span>Sass</span>
             </div>
           </div>
-
-          <div class="p-3 p-lg-5">
-            <div class="mb-3 my_item project">
-              <div class="row no-gutters">
-                <div class="item-left col-12 col-xl-4">
-                  <div class="bg-image" style="background-image: url('assets/pankaj-patel-_SgRNwAVNKw-unsplash.jpg');">
-                  </div>
-                </div>
-                <div class="item-right col-12 col-xl-8 p-3">
-                  <pre class="p-0 m-0 json"><code></code></pre>
-                  <div class="profile-links">
-                    <a target="_blank" href="https://github.com/fivan18/ruby-linter">
-                      <i class="fab fa-github-square"></i>
-                    </a>
-                    <a class="font-color" target="_blank" href="https://github.com/fivan18/ruby-linter#installation">
-                      INSTALL
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="p-3 p-lg-5">
-            <div class="mb-3 my_item project">
-              <div class="row no-gutters">
-                <div class="item-left col-12 col-xl-4">
-                  <div class="bg-image" style="background-image: url('assets/andrew-schultz-USncr9ads6k-unsplash.jpg');">
-                  </div>
-                </div>
-                <div class="item-right col-12 col-xl-8 p-3">
-                  <pre class="p-0 m-0 json"><code></code></pre>
-                  <div class="profile-links">
-                    <a target="_blank" href="https://github.com/fivan18/grid-based-framework">
-                      <i class="fab fa-github-square"></i>
-                    </a>
-                    <a class="font-color" target="_blank" href="https://fivan18.github.io/grid-based-framework/">
-                      DEMO
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <footer class="border-top font-color">
-              <div class="d-flex justify-content-center pt-3 pb-1">
-                <div class="text-center">
-                  <div>Made by &copy;
-                    <a href="#">Ivan Guzman</a>
-                  </div>
-                  <div>
-                    Photos by: <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@beatthegrind?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Andrew Schultz"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Andrew Schultz</span></a>
-                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@pankajpatel?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Pankaj Patel"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Pankaj Patel</span></a>
-                    <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, San Francisco, Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@photoripey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ibrahim Rifath"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Ibrahim Rifath</span></a>
-                  </div>
-                  
-                </div>
-              </div>
-          </footer>
-
-        </main>
+        </a>
       </div>
 
+      <div class="about" id="about">
+        <div class="about__left">
+          <h2>
+            About <br>
+            Myself
+          </h2>
+          <p>
+            I'm a software developer! I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded don't hesitate to contact me.
+          </p>
+          <a class="about__connect" href="#contact">LET'S CONNECT</a>
+          <div class="about__links">
+            <a href="https://twitter.com/fivanunam" target="_blank">
+              <img src="https://img.icons8.com/android/24/000000/twitter.png"/>
+            </a>
+            <a href="https://www.linkedin.com/in/fivan/" target="_blank">
+              <img src="https://img.icons8.com/android/24/000000/linkedin.png"/>
+            </a>
+            <a href="https://hackernoon.com/u/fivan" target="_blank">
+              <img src="https://img.icons8.com/material-outlined/24/000000/book.png"/>
+            </a>
+            <a href="https://github.com/fivan18" target="_blank">
+              <img src="https://img.icons8.com/material-outlined/24/000000/github.png"/>
+            </a>
+            <a href="https://angel.co/u/fivan" target="_blank">
+              <img src="https://img.icons8.com/fluent-systems-regular/48/000000/hand-peace.png"/>
+            </a>
+          </div>
+          <a class="about__resume" href="https://drive.google.com/file/d/14ZHNNxDrERnZGHGN1vlmJPlZ-fsMUf_M/view?usp=sharing" target="blank">Download Resume</a>
+        </div>
+        <div class="about__rigth">
+          <div class="about__skills">
+            <h3>Languages</h3>
+            <div class="about__skills-lang">
+              <img src="https://img.icons8.com/metro/52/000000/html.png"/>
+              <img src="https://img.icons8.com/metro/52/000000/css.png"/>
+              <img src="https://img.icons8.com/ios-filled/50/000000/javascript.png"/>
+              <img src="https://img.icons8.com/android/48/000000/ruby-programming-language.png"/>
+              <img src="https://img.icons8.com/ios-filled/50/000000/c-sharp-logo.png"/>
+            </div>
+          </div>
+          <div class="about__skills">
+            <h3>Frameworks</h3>
+            <div class="about__skills-framework">
+              <span>Ruby on Rails</span>
+              <span>React & Redux</span>
+              <span>ASP.NET</span>
+              <span>SQL</span>
+            </div>
+          </div>
+          <div class="about__skills">
+            <h3>Skills</h3>
+            <div class="about__skills-skill">
+              <span>SQL Server</span>
+              <span>MySQL</span>
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>GitLab</span>
+              <span>Heroku</span>
+              <span>Mobile/Responsive Development</span>
+              <span>RSpec</span>
+              <span>TDD</span>
+              <span>SCRUM</span>
+              <span>Teamwork</span>
+              <span>Pair-Programing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="contact__content">
+          <h2>Contact Me</h2>
+          <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it.</p>
+          <form action="https://formsubmit.co/fivanunam@yahoo.com.mx" method="POST">
+              <input type="hidden" name="_next" value="https://fivan18.github.io/portfolio/">
+              <input type="text" name="_subject" placeholder="Subject" required>
+              <input type="email" name="email" placeholder="Email Address" required>
+              <textarea name="message" placeholder="Message" rows="8" required></textarea>
+              <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div class="nav-responsive" id="nav-responsive">
+      <a href="#head" class="nav-responsive__close">&times;</a>
+      <div class="nav-responsive__links">
+        <a href="#portfolio">
+          Portfolio
+        </a>
+        <a href="#about">
+          About
+        </a>
+        <a href="#contact">
+          Contact
+        </a>
+      </div>
     </div>
 
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <style>
-    </style>
-    <script src="scripts/script.js"></script>
+    <div class="popup" id="popup-catalogue">
+        <div class="popup__content">
+            <a href="#catalogue" class="popup__close">&times;</a>
+            <h2 class="popup__head">
+              Catalogue of Books
+            </h2>
+            <div class="popup__sub-header">
+              Front End Dev
+            </div>
+            <img class="popup__img" src="/assets/catalogue.png" alt="Image of Books Catalogue">
+            <div class="popup__bottom">
+              <div class="popup__bottom-left">
+                <p class="popup__p">
+                  This app is a catalog of books, that is, a browsable list of books. The books can be filtered by the first published year and access to the details of each one. Build with React & Redux.
+                </p>
+              </div>
+              <div class="popup__bottom-rigth">
+                <div class="popup__tags">
+                  <span>JavaScript</span>
+                  <span>html</span>
+                  <span>React</span>
+                  <span>css</span>
+                  <span>Redux</span>
+                  <span>Sass</span>
+                </div>
+                <div class="popup__links">
+                  <a href="https://books-catalogue-ivancito.herokuapp.com/" target="_blank">Live Demo</a>
+                  <a href="https://github.com/fivan18/books-catalogue/" target="_blank">Source Code</a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
   </body>
 </html>

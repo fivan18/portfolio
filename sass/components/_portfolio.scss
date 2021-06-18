@@ -1,0 +1,11 @@
+.portfolio {
+    padding: 15rem;
+
+    @include respond(tab-port) {
+        padding: 12rem 7rem;
+    }
+
+    @include respond(phone) {
+        padding: 12rem 3rem;
+    }
+}
