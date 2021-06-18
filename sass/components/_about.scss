@@ -4,6 +4,7 @@
     padding: 8rem 10rem;
 
     background-color: #FFF;
+    border-top-right-radius: 15rem;
 
     &__left {
         width: 45%;
@@ -28,17 +29,32 @@
             margin-bottom: 2rem;
         }
 
-        & > a {
+        & > a.about__connect {
             font-style: normal;
             font-weight: 500;
             font-size: 1.6rem;
             line-height: 2.4rem;
             color: #7F8CFF;
         }
+
+        & > a.about__resume {
+            border: 1px solid #7F8CFF;
+            box-sizing: border-box;
+            border-radius: .8rem;
+            background: #FFFFFF;
+            padding: .6rem .8rem;
+
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 1rem;
+            color: #6070FF;
+        }
     }
 
     &__links {
         margin-top: 2rem;
+        margin-bottom: 2rem;
 
         & > a > img {
             width: 2rem;
@@ -49,5 +65,45 @@
     &__rigth {
         width: 55%;
         padding-left: 4rem;
+    }
+
+    &__skills {
+        & > h3 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            color: #344563;
+
+            margin-bottom: 2rem;
+        }
+
+        &-lang {
+            display: flex;
+            flex-flow: row wrap;
+
+            margin-bottom: 2rem;
+            
+            & > img {
+                width: 4.5rem;
+                margin-right: 1rem;
+            }
+        }
+
+        &-framework, &-skill {
+            margin-bottom: 2rem;
+
+            & > span {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.2rem;
+                line-height: 1.6rem;
+                padding: .4rem 1.2rem;
+                border-radius: .8rem;
+    
+                color: #6070FF;
+                background-color: #EBEBFF;
+            }
+        }
     }
 }

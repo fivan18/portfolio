@@ -362,7 +362,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   padding: 8rem 10rem;
-  background-color: #FFF; }
+  background-color: #FFF;
+  border-top-right-radius: 15rem; }
   .about__left {
     width: 45%; }
     .about__left > h2 {
@@ -379,17 +380,54 @@ body {
       line-height: 24px;
       color: #344563;
       margin-bottom: 2rem; }
-    .about__left > a {
+    .about__left > a.about__connect {
       font-style: normal;
       font-weight: 500;
       font-size: 1.6rem;
       line-height: 2.4rem;
       color: #7F8CFF; }
+    .about__left > a.about__resume {
+      border: 1px solid #7F8CFF;
+      box-sizing: border-box;
+      border-radius: .8rem;
+      background: #FFFFFF;
+      padding: .6rem .8rem;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 1rem;
+      color: #6070FF; }
   .about__links {
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
     .about__links > a > img {
       width: 2rem;
       margin-right: 1rem; }
   .about__rigth {
     width: 55%;
     padding-left: 4rem; }
+  .about__skills > h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #344563;
+    margin-bottom: 2rem; }
+  .about__skills-lang {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 2rem; }
+    .about__skills-lang > img {
+      width: 4.5rem;
+      margin-right: 1rem; }
+  .about__skills-framework, .about__skills-skill {
+    margin-bottom: 2rem; }
+    .about__skills-framework > span, .about__skills-skill > span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: .4rem 1.2rem;
+      border-radius: .8rem;
+      color: #6070FF;
+      background-color: #EBEBFF; }
