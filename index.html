@@ -20,13 +20,13 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <div class="header__nav-button">
+      <a class="header__nav-button" href="#nav-responsive">
         <span class="header__nav-icon">&nbsp;</span>
-      </div>
+      </a>
     </header>
 
     <main class="main">
-      <div class="head">
+      <div class="head" id="head">
         <h1>
           Hi I'm Ivan! <br>
           Nice you are here!
@@ -53,7 +53,7 @@
           </a>
         </div>
       </div>
-      <div class="portfolio">
+      <div class="portfolio" id="portfolio">
         <a href="#popup" class="card" id="catalogue">
           <div class="card__left">
             <img class="card__img" src="/assets/catalogue.png" alt="Image of Books Catalogue">
@@ -80,7 +80,7 @@
         </a>
       </div>
 
-      <div class="about">
+      <div class="about" id="about">
         <div class="about__left">
           <h2>
             About <br>
@@ -149,7 +149,7 @@
         </div>
       </div>
 
-      <div class="contact">
+      <div class="contact" id="contact">
         <div class="contact__content">
           <h2>Contact Me</h2>
           <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it.</p>
@@ -163,6 +163,21 @@
         </div>
       </div>
     </main>
+
+    <div class="nav-responsive" id="nav-responsive">
+      <a href="#head" class="nav-responsive__close">&times;</a>
+      <div class="nav-responsive__links">
+        <a href="#portfolio">
+          Portfolio
+        </a>
+        <a href="#about">
+          About
+        </a>
+        <a href="#contact">
+          Contact
+        </a>
+      </div>
+    </div>
 
     <div class="popup" id="popup">
         <div class="popup__content">
