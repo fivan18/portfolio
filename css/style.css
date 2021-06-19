@@ -168,7 +168,8 @@ body {
   flex-flow: row nowrap;
   background-color: #FFF;
   transition: transform 0.3s;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  margin-bottom: 8rem; }
   @media only screen and (max-width: 56.25em) {
     .card {
       flex-flow: column nowrap; } }
@@ -211,24 +212,31 @@ body {
     font-size: 1.6rem;
     line-height: 2.4rem;
     margin-bottom: 2rem; }
-  .card__tags > span {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    padding: .4rem 1.2rem;
-    border-radius: .8rem;
-    color: #6070FF;
-    background-color: #EBEBFF; }
+  .card__tags {
+    display: flex;
+    flex-flow: row wrap; }
+    .card__tags > span {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+      padding: .4rem 1.2rem;
+      border-radius: .8rem;
+      color: #6070FF;
+      background-color: #EBEBFF;
+      margin-right: 1rem; }
 
 .portfolio {
-  padding: 15rem; }
+  padding: 15rem;
+  padding-bottom: 5rem; }
   @media only screen and (max-width: 56.25em) {
     .portfolio {
-      padding: 12rem 7rem; } }
+      padding: 12rem 7rem;
+      padding-bottom: 7rem; } }
   @media only screen and (max-width: 37.5em) {
     .portfolio {
-      padding: 12rem 3rem; } }
+      padding: 12rem 3rem;
+      padding-bottom: 7rem; } }
 
 .popup {
   height: 100vh;
