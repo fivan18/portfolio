@@ -8,6 +8,8 @@
 
     border-radius: 1rem;
 
+    margin-bottom: 8rem;
+
     @include respond(tab-port) {
         flex-flow: column nowrap;
     }
@@ -71,6 +73,9 @@
     }
 
     &__tags {
+        display: flex;
+        flex-flow: row wrap;
+
         & > span {
             font-style: normal;
             font-weight: 500;
@@ -81,6 +86,8 @@
 
             color: #6070FF;
             background-color: #EBEBFF;
+
+            margin-right: 1rem;
         }
     }
 }
