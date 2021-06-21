@@ -77,7 +77,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 2rem;
-    color: #6070FF; }
+    color: #253AF4; }
   .header__nav > ul {
     display: flex;
     flex-flow: row nowrap; }
@@ -153,7 +153,7 @@ body {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 2.4rem;
-    color: #7F8CFF; }
+    color: #253AF4; }
   .head__links {
     margin-top: 1rem; }
     .head__links > a > img {
@@ -222,7 +222,7 @@ body {
       line-height: 1.6rem;
       padding: .4rem 1.2rem;
       border-radius: .8rem;
-      color: #6070FF;
+      color: #0C23ED;
       background-color: #EBEBFF;
       margin-right: 1rem; }
 
@@ -332,7 +332,7 @@ body {
       line-height: 1.6rem;
       padding: .4rem 1.2rem;
       border-radius: .8rem;
-      color: #6070FF;
+      color: #0C23ED;
       background-color: #EBEBFF;
       margin-right: .5rem; }
   .popup__links {
@@ -408,7 +408,7 @@ body {
       font-weight: 500;
       font-size: 1.6rem;
       line-height: 2.4rem;
-      color: #7F8CFF; }
+      color: #253AF4; }
     .about__left > a.about__resume {
       border: 1px solid #7F8CFF;
       box-sizing: border-box;
@@ -456,7 +456,7 @@ body {
       line-height: 1.6rem;
       padding: .4rem 1.2rem;
       border-radius: .8rem;
-      color: #6070FF;
+      color: #0C23ED;
       background-color: #EBEBFF; }
 
 .contact {
