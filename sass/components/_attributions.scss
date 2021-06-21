@@ -1,0 +1,20 @@
+.attributions {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    background-color: #6070FF;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    & > div {
+        color: white;
+
+        & > a {
+            text-decoration: underline;
+        }
+    }
+}

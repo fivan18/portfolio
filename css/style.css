@@ -576,3 +576,17 @@ body {
     line-height: 1; }
   .nav-responsive__close:hover {
     color: white; }
+
+.attributions {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #6070FF;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.4rem;
+  line-height: 2rem; }
+  .attributions > div {
+    color: white; }
+    .attributions > div > a {
+      text-decoration: underline; }
